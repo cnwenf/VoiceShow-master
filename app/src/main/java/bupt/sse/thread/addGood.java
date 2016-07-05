@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 import config.IPConfig;
-//
+
 
 public class addGood extends Thread{
     private String defName = null;
