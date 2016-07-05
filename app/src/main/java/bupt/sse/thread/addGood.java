@@ -24,6 +24,10 @@ public class addGood extends Thread{
         this.userName = userName;
         this.mHandler = mHandler;
     }
+    public void test1(){
+        String test = null;
+    }
+    public void test2(){}
     public void run(){
         Socket socket = null;
         try {
