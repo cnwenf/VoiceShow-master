@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#59cca7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorNumber">#ABABAB</color>
+    <color name="colorText">#5B5B5B</color>
+    <color name="black">#FF000000</color>
+    <color name="main_color">#59cca7</color>
+    <color name="hot_background">#F0F0F0</color>
+    <color name="hot_background2">#FAF4FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bili_red">#db77ab</color>
+    <color name="bili_red2">#efc1d9</color>
+    <color name="bili_red3">#fcf4f8</color>
+    <color name="region">#8000ff00</color>
+    <color name="listTitle">#ff23323b</color>
+    <color name="text">#ff848f9b</color>
+    <color name="write">#ffffffff</color>
+</resources>

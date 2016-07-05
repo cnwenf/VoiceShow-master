@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="45dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/ll_discovery"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="50dp">
+            <ImageButton
+                android:id="@+id/iv_discovery"
+                android:layout_width="19dp"
+                android:layout_height="18dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_tab_discovery_nor" />
+            <TextView
+                android:id="@+id/tv_discovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="发现"
+                android:textSize="13dp"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_hot"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="90dp">
+
+            <ImageButton
+                android:id="@+id/iv_hot"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/ic_tab_hot_nor"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_hot"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="13dp"
+                android:text="热门"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_person"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_marginLeft="90dp" >
+            <ImageButton
+                android:id="@+id/iv_person"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/ic_tab_person_nor" />
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentLeft="true"
+                android:text="个人"
+                android:textSize="13dp"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_above="@id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ScrollView>
+</RelativeLayout>

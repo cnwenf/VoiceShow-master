@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListView最左边的缩略图 -->
+    <LinearLayout android:id="@+id/ll_person1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/person1_picture"
+            android:layout_width="110dip"
+            android:layout_height="80dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/hot01"/>
+    </LinearLayout>
+
+    <!-- 视频名-->
+    <TextView
+        android:id="@+id/person1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ll_person1"
+        android:text="疯狂动物城"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <!-- 视频时长 -->
+    <TextView
+        android:id="@+id/person1_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person1_name"
+        android:textColor="#343434"
+        android:textSize="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/ll_person1"
+        android:text="1:02" />
+
+    <!-- 开始配音 -->
+    <Button
+        android:id="@+id/person1_voice"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/person1_voice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <AbsoluteLayout
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/main_color">
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:background="@drawable/back"
+                android:layout_marginLeft="6dp" />
+            <TextView
+                android:id="@+id/firstText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="登   陆"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+        </FrameLayout>
+    </AbsoluteLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="85dp"/>
+    <EditText
+        android:id="@+id/et_zhanghao"
+        android:layout_width="250dp"
+        android:layout_height="36dip"
+        android:background="@drawable/edittext"
+        android:padding="5dip"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="180dp"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="请输入用户名" />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="250dp"
+        android:inputType="textPassword"
+        android:layout_height="36dip"
+        android:background="@drawable/edittext"
+        android:padding="5dip"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="230dp"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="请输入密码" />
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="275dp"
+        android:layout_height="36dip"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/button"
+        android:text="登  陆"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="340dp"/>
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册账号"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="340dp"/>
+        </RelativeLayout>
+</RelativeLayout>

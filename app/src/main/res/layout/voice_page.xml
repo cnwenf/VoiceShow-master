@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/firstText"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="@string/voice_page"
+            android:textSize="27sp"
+            android:gravity="center"
+            android:layout_marginEnd="28dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="250sp"
+        android:layout_weight="1"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/function"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/surfaceView">
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="16sp"
+            android:src="@drawable/pause"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/voice_record"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:background="@drawable/play"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/finish"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/stop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/f_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/function">
+
+    <TextView
+        android:id="@+id/t_pause"
+        android:layout_width="35sp"
+        android:layout_height="50dp"
+        android:layout_marginRight="30sp"
+        android:text="暂停"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textIsSelectable="false"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/t_voice"
+        android:layout_width="70sp"
+        android:layout_height="50dp"
+        android:text="配音"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textIsSelectable="false"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/t_finish"
+        android:layout_width="35sp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="完成"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textIsSelectable="false"
+        android:layout_alignParentStart="true"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ffffff">
+    <include
+        android:id="@+id/find_head"
+        layout="@layout/find_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp"
+        android:layout_marginRight="0sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="160sp"
+            android:background="@drawable/recommend"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:text="搞笑"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/funny"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:text="模仿"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/imitation"
+                android:textIsSelectable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_row1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:id="@+id/textView4"
+                android:scaleType="fitXY"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:text="英配"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/english"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:scaleType="fitXY"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:text="日配"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/japan"
+                android:textIsSelectable="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_row2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:text="演唱"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/sing"
+                android:textIsSelectable="false"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:text="朗诵"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/read"
+                android:textIsSelectable="false"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/activity_bottom"
+        android:id="@+id/layout_bottom"
+        android:layout_below="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

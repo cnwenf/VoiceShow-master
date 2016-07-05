@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="7dp" >
+
+    <!--  ListView最左边的缩略图 -->
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/main_color"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="2" />
+    <LinearLayout android:id="@+id/ll_subhot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_toRightOf="@+id/tv_number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hot01"/>
+    </LinearLayout>
+
+    <!-- 视频名-->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ll_subhot"
+        android:text="疯狂动物城"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <!-- 视频时长 -->
+    <TextView
+        android:id="@+id/tv_time0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:textColor="#8B8B8B"
+        android:textSize="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/ll_subhot"
+        android:text="时长：" />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:textColor="#8B8B8B"
+        android:textSize="13dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_time0"
+        android:text="1:02" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time0"
+        android:layout_toRightOf="@+id/ll_subhot"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/hot_play_num" />
+
+        <TextView
+            android:id="@+id/tv_playnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="12sp"
+            android:text="566" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/hot_good" />
+
+        <TextView
+            android:id="@+id/tv_likenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="12sp"
+            android:text="233" />
+    </LinearLayout>
+</RelativeLayout>

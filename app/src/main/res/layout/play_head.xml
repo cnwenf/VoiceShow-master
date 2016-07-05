@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_x="0dp"
+    android:layout_y="0dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    >
+    <AbsoluteLayout
+        android:id="@+id/al_subhot"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/main_color">
+            <TextView
+                android:id="@+id/firstText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="播   放"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+        </FrameLayout>
+    </AbsoluteLayout>
+
+    <VideoView
+        android:id="@+id/video1"
+        android:layout_width="fill_parent"
+        android:layout_height="300sp"
+        android:layout_x="0dp"
+        android:layout_y="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp" />
+
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_below="@+id/video1"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:layout_marginTop="2dp">
+
+        <ImageButton
+            android:id="@+id/user_pic"
+            android:scaleType="fitXY"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/user1" />
+
+        <ImageButton
+            android:id="@+id/play_mark"
+            android:scaleType="fitXY"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/user_pic"
+            android:layout_marginLeft="160dp"
+            android:background="@drawable/mark"/>
+
+        <ImageButton
+            android:id="@+id/play_prise"
+            android:scaleType="fitXY"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/play_mark"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_prise"
+            android:src="@drawable/prise"/>
+        <TextView
+            android:id="@+id/prise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20000"
+            android:layout_marginTop="7dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/play_prise"
+            android:textColor="@color/colorNumber"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

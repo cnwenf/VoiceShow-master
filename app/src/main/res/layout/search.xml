@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/search_enter"
+            android:layout_width="300dp"
+            android:layout_height="28dip"
+            android:background="@drawable/edittext"
+            android:padding="5dip"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="7sp"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            android:singleLine="true"
+            android:hint="想配点儿什么呀~"
+            android:layout_below="@+id/play_topic_num"
+            />
+
+        <ImageButton
+            android:id="@+id/s_search"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:background="@drawable/search"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_biaoqian1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:layout_x="25dp"
+            android:layout_y="60dp"
+            android:text="小岳岳 "  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:text="Papi酱"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:layout_marginLeft="20dp"
+            android:text="你是风儿我是沙"  />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_biaoqian2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_biaoqian1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:text="天线宝宝表情包"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:layout_marginLeft="20dp"
+            android:text="wuli涛涛" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_biaoqian2">
+        <TextView
+            android:id="@+id/lookmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape1"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:text="查看更多分类 >"  />
+    </LinearLayout>
+    <include
+        layout="@layout/activity_bottom"
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

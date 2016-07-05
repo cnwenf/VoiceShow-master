@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/firstText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="配   音"
+            android:textSize="27sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/video2"
+        android:layout_width="fill_parent"
+        android:layout_height="250sp"
+        android:layout_weight="1"
+        android:layout_below="@+id/title"
+        />
+    <LinearLayout
+        android:id="@+id/function"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="45dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/video2">
+
+        <ImageButton
+            android:id="@+id/f_cancle"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:gravity="center"
+            android:background="@drawable/cancle"
+            android:layout_marginRight="104sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <ImageButton
+            android:id="@+id/f_save"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:gravity="center"
+            android:background="@drawable/stop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_l"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/function">
+
+    <TextView
+        android:id="@+id/v"
+        android:layout_width="40sp"
+        android:layout_height="50sp"
+        android:layout_marginRight="100sp"
+        android:text="取消"
+        android:background="#FFFFFF"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textIsSelectable="false"
+        android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/t_cancle"
+            android:layout_width="40sp"
+            android:layout_height="50sp"
+            android:text="保存"
+            android:background="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:textIsSelectable="false"
+            android:layout_alignParentStart="true"/>
+    </LinearLayout>
+
+</RelativeLayout>
