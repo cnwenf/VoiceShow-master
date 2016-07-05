@@ -8,9 +8,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-/**
- * Created by TongXinSummer on 2016/5/21.
- */
+
 public class DiscoveryActivity extends Activity implements View.OnClickListener {
     ///
     private ImageView iv_discovery;
