@@ -57,8 +57,8 @@ public class PlayActivity extends Activity {
     private Button comment_send;
 
     //注意：以下两个变量应该由上一个界面传值过来
-    private String defName = "冰雪奇缘1";
-    private String userName = "wf";
+    private String defName = "煎饼侠2016-07-06";
+    private String userName = "配音盒";
     private String num = "10";
     Handler handler = new Handler(){
         @Override
