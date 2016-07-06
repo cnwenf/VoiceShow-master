@@ -19,6 +19,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -119,13 +120,28 @@ public class PlayActivity extends Activity {
         prise_num.setText(num);
 
         //点赞部分
+        play_prise.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN){
+                    new addGood(defName,userName,handler).start();
+                    view.setBackgroundResource(R.drawable.prise1);
+                }
+                else if(motionEvent.getAction()==MotionEvent.ACTION_UP){
+                    view.setBackgroundResource(R.drawable.prise);
+                }
+                return false;
+            }
+        });
+        /*
         play_prise.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+
                 new addGood(defName,userName,handler).start();
             }
         });
-
+        */
        comment_send.setOnClickListener(new View.OnClickListener(){
 
            @Override
